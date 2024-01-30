@@ -5,7 +5,7 @@ variable "parameters" {
   default = {
     "dev.expense.rds.username" = "admin1"
     "dev.expense.rds.endpoint" = "dev-expense-rds.cr4u6mguqffy.us-east-1.rds.amazonaws.com"
-    "dev.expense.frontend.backend_endpoint" = "https://backend-dev.jyothsnashrey.online"  # through this end point we can communicate to SQL from backend
+    "dev.expense.frontend.backend_endpoint" = "https://backend-dev.jyothsnashrey.online/"  # through this end point we can communicate to SQL from backend
   }
 }
 
