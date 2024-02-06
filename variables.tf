@@ -16,7 +16,7 @@ variable "secrets" {
     "dev.expense.rds.password" = "ExpenseApp123"
     "ssh.password"             = "DevOps321"
     "ssh.username"             = "centos"
-    "sse.username"             = "AKIAQVXZSKBZQGEKFMZR"
-    "sse.password"             = "BNPF8gmGmHBfN8w1gOGD9vSxM/SMU1vJpStf1NNBLoh9"
+    "ses.username"             = "AKIAQVXZSKBZQGEKFMZR"
+    "ses.password"             = "BNPF8gmGmHBfN8w1gOGD9vSxM/SMU1vJpStf1NNBLoh9"
   }
 }
