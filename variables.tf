@@ -6,7 +6,7 @@ variable "parameters" {
     "dev.expense.rds.username"              = "admin1"
     "dev.expense.rds.endpoint"              = "dev-expense-rds.cr4u6mguqffy.us-east-1.rds.amazonaws.com"
     "dev.expense.frontend.backend_endpoint" = "https://backend-dev.jyothsnashrey.online/" # through this end point we can communicate to SQL from backend
-    "expense.newrelic.account"              = "4347734"
+    "newrelic.account"              = "4347734"
   }
 }
 
@@ -20,6 +20,6 @@ variable "secrets" {
     "ses.username"             = "AKIAQVXZSKBZQGEKFMZR"
     "ses.password"             = "BNPF8gmGmHBfN8w1gOGD9vSxM/SMU1vJpStf1NNBLoh9"
     "grafana.apikey"           = "glsa_iPznf8KMHXevnDhDAlaxdhqbQqE5YZzF_a387a4b6"
-    "expense.newrelic.key"     = "NRAK-BMDPUXRA7KOAJQU0NQJ9BBZULYV"
+    "dev.expense.frontend.newrelic.key"     = "NRAK-BMDPUXRA7KOAJQU0NQJ9BBZULYV"
   }
 }
