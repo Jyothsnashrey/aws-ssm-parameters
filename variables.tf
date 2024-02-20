@@ -6,7 +6,9 @@ variable "parameters" {
     "dev.expense.rds.username"              = "admin1"
     "dev.expense.rds.endpoint"              = "dev-expense-rds.cr4u6mguqffy.us-east-1.rds.amazonaws.com"
     "dev.expense.frontend.backend_endpoint" = "https://backend-dev.jyothsnashrey.online/" # through this end point we can communicate to SQL from backend
-    "newrelic.account"              = "4347734"
+    "newrelic.account"                      =  "4347734"
+    "dev.expense.frontend.app_version"      = "1.0.1"
+    "dev.expense.backend.app_version"       =   "1.0.1"
   }
 }
 
@@ -14,15 +16,17 @@ variable "parameters" {
 ## note in org we don't keep password in git repo, just for lab purposes we are declaring and hard coding
 variable "secrets" {
   default = {
-    "dev.expense.rds.password" = "ExpenseApp123"
-    "ssh.password"             = "DevOps321"
-    "ssh.username"             = "centos"
-    "ses.username"             = "AKIAQVXZSKBZQGEKFMZR"
-    "ses.password"             = "BNPF8gmGmHBfN8w1gOGD9vSxM/SMU1vJpStf1NNBLoh9"
-    "grafana.apikey"           = "glsa_iPznf8KMHXevnDhDAlaxdhqbQqE5YZzF_a387a4b6"
-    "dev.expense.frontend.newrelic.key"     = "NRAK-BMDPUXRA7KOAJQU0NQJ9BBZULYV"
-    "dev.expense.backend.newrelic.key"     = "d9956a6780aeea098434782b799181b4FFFFNRAL"
-    "elasticsearch.password"      = "4SFV+643faD+CE9rxQV3"
+    "dev.expense.rds.password"                  = "ExpenseApp123"
+    "ssh.password"                              = "DevOps321"
+    "ssh.username"                              = "centos"
+    "ses.username"                              = "AKIAQVXZSKBZQGEKFMZR"
+    "ses.password"                              = "BNPF8gmGmHBfN8w1gOGD9vSxM/SMU1vJpStf1NNBLoh9"
+    "grafana.apikey"                            = "glsa_iPznf8KMHXevnDhDAlaxdhqbQqE5YZzF_a387a4b6"
+    "dev.expense.frontend.newrelic.key"         = "NRAK-BMDPUXRA7KOAJQU0NQJ9BBZULYV"
+    "dev.expense.backend.newrelic.key"          = "d9956a6780aeea098434782b799181b4FFFFNRAL"
+    "elasticsearch.password"                    = "4SFV+643faD+CE9rxQV3"
+    "artifactory_user"                          = "admin"
+    "artifactory.password"                      = "Admin123"
 
   }
 }
