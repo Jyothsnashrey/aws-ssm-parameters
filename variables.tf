@@ -14,7 +14,8 @@ variable "parameters" {
     "prod.expense.rds.endpoint"              = "prod-expense-rds.cr4u6mguqffy.us-east-1.rds.amazonaws.com"
     "prod.expense.frontend.backend_endpoint" = "https://backend-prod.jyothsnashrey.online/" # through this end point we can communicate to SQL from backend
     "prod.expense.frontend.app_version"      = "1.0.1"
-    "prod.expense.backend.app_version"       =   "1.0.1"
+    "prod.expense.backend.app_version"       = "1.0.1"
+
   }
 }
 
